@@ -100,6 +100,9 @@ body {
     z-index: 1000; /* 他の要素よりも前面に表示 */
   }
   
+
+
+
 .nav-left {
   color: #ffffff;
 }
@@ -539,10 +542,6 @@ body {
   background-color: #333;
 }
 
-
-
-
-  
   .footer {
     background: #eaeaea;
     padding: 2rem;
@@ -573,4 +572,174 @@ body {
     text-align: center;
     margin-top: 1rem;
   }
+
+
+  /* スマートフォン向けスタイル */
+@media (max-width: 767px) {
+  .header {
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+  }
+
+  .nav-menu a, .nav-right a {
+    margin: 0 5px;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .product-items {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .about, .brewery {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .about img, .brewery img {
+    max-width: 100%;
+  }
+
+  .articles {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .section_greet {
+    padding: 50px 0;
+  }
+
+  .section_greet h2 {
+    font-size: 30px;
+    padding: 1rem;
+  }
+
+  .section_greet .row_greet {
+    width: 90%;
+    flex-direction: column;
+    padding: 20px;
+    margin-left: auto;
+  }
+
+  .col_greet1 {
+    position: relative;
+    left: 0;
+    width: 100%;
+  }
+
+  .contact-section {
+    padding: 50px 10px;
+  }
+
+  .contact-title {
+    font-size: 24px;
+  }
+
+  .contact-text {
+    font-size: 14px;
+  }
+
+  .contact-button {
+    padding: 12px 36px;
+  }
+
+  .page_main_visual .container {
+    width: 95%;
+    height: 200px;
+  }
+
+  .page_main_visual h1 {
+    font-size: 30px;
+  }
+
+  .page_main_visual p {
+    font-size: 16px;
+  }
+
+  .company_section {
+    padding: 50px 10px 10px;
+  }
+
+  .company_section h2 {
+    font-size: 28px;
+  }
+
+  .company_section .subtitle {
+    font-size: 10px;
+  }
+
+  .company_section .underline {
+    width: 50%;
+  }
+
+  .company_section1 {
+    padding: 20px;
+  }
+
+  .company_section1 table {
+    width: 100%;
+  }
+
+  .company_section2 {
+    padding: 50px 0;
+  }
+
+  .company_section2 .sub_title {
+    font-size: 30px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .intro {
+    padding: 50px 10px 20px;
+  }
+
+  .intro h1 {
+    font-size: 28px;
+  }
+
+  .intro p {
+    font-size: 14px;
+  }
+
+  .contact_section0 {
+    padding: 10px 10px 10px;
+  }
+
+  .contact_section0 h2 {
+    font-size: 28px;
+  }
+
+  .contact_section0 .subtitle {
+    font-size: 10px;
+  }
+
+  .contact_section0 .underline {
+    width: 50%;
+  }
+
+  .footer {
+    padding: 1rem;
+    font-size: 12px;
+  }
+
+  .footer-main {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
 
