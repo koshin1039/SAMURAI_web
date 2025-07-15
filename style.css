@@ -3,10 +3,11 @@ body {
     font-family: 'Helvetica Neue', sans-serif;
     color: #131e7c;
     background-color: #ffffff;
-    overflow-y: hidden;
-
+    /* overflow-y: hidden; */
   }
 
+  
+  /* 
 /* 全画面オーバーレイ */
 .fullscreen-overlay {
   position: fixed;
@@ -136,6 +137,10 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
+
+  .products p {
+    color: #000000;
+  }
   
   .product-items {
     display: flex;
@@ -232,7 +237,7 @@ body {
   }
   
   /* .col_greet image {
-     
+    
   
   } */
   
@@ -632,11 +637,13 @@ body {
     width: 100px;
 
   }
-  .section_greet .row_greet{
+  .section_greet .row_greet {
+  
     width: 100%;
-    flex-direction: column;
-    padding: 20px;
+    padding: 0px;
     margin-left: auto;
+    flex-wrap: wrap-reverse;
+
   }
 
   .col_greet1 {
