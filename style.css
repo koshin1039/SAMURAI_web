@@ -466,6 +466,7 @@ body {
 .contact_section0 {
   text-align: center;
   padding: 10px 20px 20px;
+
 }
 
 .contact_section0 h2 {
@@ -583,6 +584,7 @@ body {
 
   .nav-menu a, .nav-right a {
     margin: 0 5px;
+    width: 398px;
   }
 
   .products {
@@ -594,6 +596,10 @@ body {
   .product-items {
     flex-direction: column;
     gap: 1rem;
+  }
+
+  .products img {
+    width: 300px;
   }
 
   .about, .brewery {
@@ -620,8 +626,14 @@ body {
     padding: 1rem;
   }
 
-  .section_greet .row_greet {
-    width: 90%;
+  .section_greet img {
+
+
+    width: 100px;
+
+  }
+  .section_greet .row_greet{
+    width: 100%;
     flex-direction: column;
     padding: 20px;
     margin-left: auto;
