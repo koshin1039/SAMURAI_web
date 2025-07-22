@@ -764,3 +764,53 @@ body {
   }
 }
 
+.hamburger {
+  display: none; /* Initially hide the hamburger menu */
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hide off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: #131e7c;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    transition: left 0.3s ease;
+    z-index: 1001; /* Ensure it's above other elements */
+  }
+
+  .nav-menu a {
+    padding: 1rem;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .hamburger {
+    display: block; /* Show the hamburger menu */
+  }
+
+  .header {
+    justify-content: space-between; /* Distribute space between elements */
+    align-items: center; /* Vertically align items */
+  }
+}
+
+.nav-menu.active {
+  left: 0; /* Slide in the menu */
+}
+
