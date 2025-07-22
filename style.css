@@ -643,6 +643,8 @@ body {
     padding: 0px;
     margin-left: auto;
     flex-wrap: wrap-reverse;
+    padding: 20px;
+    box-sizing: border-box;
 
   }
 
