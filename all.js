@@ -17,7 +17,22 @@ document.addEventListener("DOMContentLoaded", function () {
         body.style.overflow = 'visible'; // スクロールを無効化
     }, 5000);//5秒後にフェードアウト
 
-    
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        nav.classList.toggle('active');
+    });
+
+    // メニューリンクをクリックしたときにメニューを閉じる
+    const navLinks = document.querySelectorAll('.nav-menu a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            nav.classList.remove('active');
+        });
+    });
 });
 
 window.addEventListener('scroll', function() {
@@ -27,13 +42,4 @@ window.addEventListener('scroll', function() {
     } else {
         header.style.backgroundColor = '#131e7c'; // 元の色に戻す
     }
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-  const hamburger = document.querySelector('.hamburger');
-  const navMenu = document.querySelector('.nav-menu');
-
-  hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-  });
 });
