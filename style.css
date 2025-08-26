@@ -96,7 +96,7 @@ body {
     padding: 1rem 2rem;
     background: white;
     font-size: 14px;
-    background-color: #131e7c;
+    background-color: #000000;
     transition: background-color 0.3s ease; /* スムーズな色の変化のため */
     z-index: 1000; /* 他の要素よりも前面に表示 */
     box-sizing: border-box;
@@ -104,9 +104,27 @@ body {
   
 
 
-
 .nav-left {
   color: #ffffff;
+}
+
+header h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+.nav-menu ul {
+  display: flex;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px; /* メニュー項目間の間隔 */
+}
+
+.nav-menu li {
+  margin: 0;
 }
 
 
@@ -117,6 +135,7 @@ body {
   .hero {
     position: relative;
     text-align: center;
+    top: 45px;
   }
   
   .hero-img {
@@ -636,13 +655,17 @@ body {
     top: 0;
     right: -100%;
     width: 70%;
-    height: 100vh;
+    height: 50vh;
     background-color: #131e7c;
     padding: 80px 20px;
     transition: all 0.3s;
     flex-direction: column;
     align-items: center;
     z-index: 1000;
+  }
+
+  .nav-menu ul {
+    display: block;
   }
 
   .nav-menu.active {
@@ -652,7 +675,7 @@ body {
   .nav-menu a {
     display: block;
     margin: 20px 0;
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .header {
